@@ -18,10 +18,10 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.loadTodos()
-    .then(()=>{
+    .then((res)=>{
       console.log('todos loaded');
-      
     })
+    
   }
 
   async loadTodos(){

@@ -14,6 +14,7 @@ export class TodoService {
         }
 
         async addTodo(todos:Partial<todo>){
+                console.log(todos);
                 await sleep(1000);
                 return {
                         id:Math.random().toString(36).substr(2,9),
